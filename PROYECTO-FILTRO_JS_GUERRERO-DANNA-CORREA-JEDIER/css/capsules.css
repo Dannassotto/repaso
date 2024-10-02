@@ -1,0 +1,238 @@
+@import url(variables.css);
+* {
+    font-size: 1.3vw;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto-Regular";
+    color: #fff;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: 
+    url('../img/dplnews_SpaceX_mc261020.jpg')
+        ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    margin: 0;
+    animation: changeBackground 15s infinite;
+    
+}
+
+.h1{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.521vw;
+    margin-top: -0.2vw;
+    color:  #ffffff;
+}.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; 
+}
+
+.rotating-image{
+    width: 26.042vw; 
+    animation: rotate 10s infinite linear; 
+    margin-left:65vw;
+    position: absolute;
+}@keyframes rotate {
+    0% {
+        transform: rotateY(0deg); 
+    }
+    100% {
+        transform: rotateY(360deg); 
+    }
+}
+
+.capsula-nombre {
+    margin: 0.26vw 0; 
+    font-size: 2em ;
+    margin-top: -12vw;
+    text-align: center;
+    position: relative; 
+    top: -7.813vw;
+    color: #ffffff;
+}.carousel-container {
+    display: flex;
+    overflow: hidden;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: -8vw;
+}.capsule-card {
+    position: absolute;
+    background: linear-gradient(var(--color--three), var(--color--one--rgba));
+    border-radius: 0.417vw;
+    box-shadow: 0 0 5px rgba(182, 172, 172, 0.1);
+    width: 30vw;
+    margin: 0.521vw;
+    color: white;
+    padding: 1.781vw;
+    margin-left: -15vw;
+    min-width: 15.625vw;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    margin-top: 20vw;
+}
+
+button {
+    font-size: 5vw;
+    color: white;
+    margin-top: 9.896vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    
+}
+.fi{
+    width: 8vw;
+    height: 8vh;
+    background-color:  #0d0d0e;
+}
+.fd{
+    width: 8vw;
+    height: 8vh;
+    background-color: #0d0d0e;
+}
+.footer {
+    position: absolute;
+    margin-left: 9.5vw;
+    margin-top: 13vw;
+    grid-area: section__footer;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: ". footer__menu .";
+}.footer ul {
+    grid-area: footer__menu;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    margin-top: -1vw; 
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3.8vw;
+    list-style: none;
+}.footer ul li a {
+    background-color: #050505;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 20vw;
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color--two);
+    transition: color 0.3s, transform 0.3s ;
+}#svg1{
+    padding: 5vw;
+}
+#texto1{
+    color: rgb(255, 255, 255);
+}
+.house{
+    width: 3vw;
+}.capsule{
+    margin-top: -1vw;
+    width: 3vw;
+}.rocket{
+    width: 3vw;
+}.history{
+    width: 3vw;
+}.company{
+    width: 3vw;
+}
+
+.footer ul li a:hover {
+    color: var(--color--three);
+    transform: scale(1.1);
+}
+.select{
+    padding: 8px 0;
+    border-bottom: 4px solid var(--color--five) ;
+}
+/*resposivo en progresos*/
+@media (max-width: 430px){
+    *{
+        font-size: 4.5vw;
+    }
+    body { /*fono */
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+        background-image: 
+            url('../img/FondoCelular.jpeg')
+            ;
+    }
+    h1{
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 0.521vw;
+        margin-top: -0.5vw;
+        color:  #ffffff;
+    }
+    .capsule-card {
+        position: absolute;
+        background: linear-gradient(var(--color--three), var(--color--one--rgba));
+        border-radius: 0.417vw;
+        box-shadow: 0 0 5px rgba(182, 172, 172, 0.1);
+        width: 60vw;
+        margin: 0.521vw;
+        color: white;
+        padding: 1.781vw;
+        margin-top: 2vw;
+        margin-left: -30vw;
+        min-width: 15.625vw;
+    }
+    #capsula-nombre{
+        margin-top: 20vw;
+    }
+    /*nose como funciona pero funciona que es lo importante. no tocar*/
+    .carousel-buttons {
+        /* corregir errores de cresimiento de la letras o cambiar por imagenes*/
+        height: 2vw;
+        width: 10%;
+        margin-left: -20vw;
+        margin-top: 120vw;
+        position: absolute;
+    }
+    .footer {
+        position: absolute;
+        margin-left: -3vw;
+        margin-top: 74vw;
+        grid-area: section__footer;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: ". footer__menu .";
+    }.house{
+        width: 8vw;
+    }.capsule{
+        width: 8vw;
+        margin-top: -1vw;
+    }.rocket{
+        
+        width: 8vw;
+    }.history{
+        width: 8vw;
+    }.company{
+        width: 8vw;
+    }
+    
+    #svg1{
+        padding: 10vw;
+    }
+    .rotating-image{
+        width: 50vw; 
+        animation: rotate 10s infinite linear; 
+        margin-top: 100vw;
+        margin-left:25vw;
+        position: absolute;
+    }
+    
+}

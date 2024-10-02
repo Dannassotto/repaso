@@ -1,0 +1,209 @@
+@import url(variables.css);
+
+* {
+    font-size: 1.3vw;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto-Regular";
+    color: #fff;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: 
+    url('../img/dplnews_SpaceX_mc261020.jpg')
+        ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
+    width: 95vw;
+    margin: 0;
+    animation: changeBackground 15s infinite;
+    
+}
+h1 {
+    font-size: 3vw;
+    margin-left: 3vw;
+    text-align: center;
+}
+#history-container{
+    margin-left: 5vw;
+    width: 90vw;
+    height: 30vw    ;
+    overflow-y: scroll;
+    text-align: center;
+}#otraPagina{
+    text-align: center;
+    width: 50vw;
+    height: 30vh;
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5vw;
+    transition: background-color 0.3s;
+    
+}
+
+
+.title-container:hover {
+    background-color: #0056b3;
+}
+
+.title {
+    flex-grow: 1; 
+}
+
+.arrow {
+    width: 1.302vw;
+    height: auto;
+    margin-left: 0.521vw; 
+    transition: transform 0.3s ease; 
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.info {
+    padding: 15px;
+    color: #ece3e3;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(8, 8, 8, 0.1);
+    margin-top: 5px;
+    display: none; 
+}
+
+button {
+    font-size: 5em;
+    color: white;
+    margin-top: 9.896vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.footer { 
+    margin-top: -4vw;
+    position: absolute;
+    margin-left: -6vw;
+    grid-area: section__footer;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: ". footer__menu .";
+}
+/*p menu inferio*/
+.footer ul {
+    grid-area: footer__menu;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    margin-top: 2vw; 
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3.8vw;
+    list-style: none;
+}.footer ul li a {
+    background-color: #050505;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 20vw;
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color--two);
+    transition: color 0.3s, transform 0.3s ;
+}#svg1{
+    padding: 5vw;
+}
+#texto1{
+    color: rgb(255, 255, 255);
+}
+.house{
+    width: 3vw;
+}.footer ul li a:hover {
+    color: var(--color--three);
+    transform: scale(1.1);
+}
+/* tamaño de lo iconos */
+.capsule{
+    width: 3vw;
+}.rocket{
+    width: 3vw;
+}.history{
+    margin-top: -1vw;
+    width: 3vw;
+}.company{
+    
+    width: 3vw;
+}
+
+.select {
+    padding: 8px 0;
+    border-bottom: 4px solid transparent;
+}
+
+@media (max-width: 430px){
+    *{
+        font-size: 4.5vw;
+    }
+    body { /*fono */
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+        background-image: 
+            url('../img/FondoCelular.jpeg')
+            ;
+    }
+    h1{
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 0.521vw;
+        margin-top: -0.5vw;
+        color:  #ffffff;
+    }
+    #history-container{
+        margin-top: 5vw;
+        margin-left: 5vw;
+        width: 90vw;
+        height: 120vw    ;
+        overflow-y: scroll;
+        text-align: center;
+    }#otraPagina{
+        text-align: center;
+        width: 60vw;
+        height: 30vh;
+    }
+    .footer {
+        position: absolute;
+        margin-left: -10vw;
+        margin-top: 30vw;
+        grid-area: section__footer;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: ". footer__menu .";
+    }#svg1{
+        padding: 10vw;
+    }.house{
+        width: 8vw;
+    }.capsule{
+        width: 8vw;
+    }.rocket{
+        
+        width: 8vw;
+    }.history{
+        width: 8vw;
+        margin-top: -1vw;
+    }.company{
+        width: 8vw;
+    }
+}

@@ -1,0 +1,84 @@
+@import url(variables.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: linear-gradient(var(--color--one), var(--color--three),var(--color--one--rgba));
+    
+    
+}
+.h1{
+    color: white;
+    margin-top: 25vh;
+    font-size: 4em;
+    margin-left: 8vw;
+
+}
+.presentacion{
+    font-size: 1.5em;
+    color: white;
+    width: 60vw;
+    height: 70vh;
+    border: 1px solid transparent;
+    margin-top: 9vh;
+    margin-left: 8vw;
+    
+}
+
+.rocket
+{
+    position: absolute;
+    margin-left: 60vw;
+    width: 63vw;
+    margin-top: -130vh;
+    filter:drop-shadow(25px 25px 30px black );
+}
+
+
+
+@media (max-width: 430px){
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+.h1{
+    color: white;
+    margin-top: 5vh;
+    font-size: 2em;
+    margin-left: 5vw;
+
+}
+.rocket
+{
+    position: absolute;
+    margin-left: 20vw;
+    width: 63vw;
+    margin-top: -100vh;
+    filter:drop-shadow(9px 10px 25px black );
+}
+.presentacion{
+    font-size: 1.5em;
+    color: white;
+    width: 70vw;
+    height: 70vh;
+    border: 1px solid transparent;
+    margin-top: 30vh;
+    margin-left: 9vw;
+    
+}
+
+}
